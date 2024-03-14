@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plaza</title>
+</head>
+<body>
+  <div id="results"></div>
+  <script>
+    var a = prompt("Enter a first number:");
+    var b = prompt("Enter a second number:");
+    a = parseFloat(a);
+    b = parseFloat(b);
+  
+    var input = "The inputs before swapping: " + a + " and " + b + ".";
+    document.getElementById("results").innerHTML += input + "<br>";
+
+    var x = a;
+    a = b;
+    b = x;
+    var swap = "After swapping: " + a + " and " + b + ".";
+    document.getElementById("results").innerHTML += swap + "<br>";
+
+    var sum = a + b;
+    var total = "The sum of the two numbers is " + sum + ".";
+    document.getElementById("results").innerHTML += total;
+  </script>
+</body>
+</html>
